@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 jupyterlab = "*"
+docker = "*"
 
 [packages]
 pandas = "*"
