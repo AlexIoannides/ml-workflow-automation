@@ -1,6 +1,8 @@
-# Titanic Survival - an Archetypal Machine Learning Workflow
+# Automating the Archetypal Machine Learning Workflow and Model Deployment
 
-This repository contains a Python-based Machine Learning (ML) project, whose principle aim is to demonstrate an archetypal ML workflow within a Jupyter notebook, using the Titanic binary classification dataset hosted on [Kaggle](https://www.kaggle.com). The ML workflow includes: some data exploration, feature engineering, model training and selection that yields a persisted prediction pipeline, that can be used in other projects downstream. We have already downloaded the data from Kaggle, in CSV format, to the data directory in this project's root directory.
+This repository contains a Python-based Machine Learning (ML) project, whose primary aim is to demonstrate the archetypal ML workflow within a Jupyter notebook, together with some proof-of-concept ideas on automating key steps, using the Titanic binary classification dataset hosted on [Kaggle](https://www.kaggle.com). The ML workflow includes: data exploration and visualisation, feature engineering, model training and selection. The notebook - `titanic-ml.ipynb` - also yields a persisted prediction pipeline (pickled to the `models` directory), that is used downstream in the model deployment process. Note, that we have already downloaded the data from Kaggle, in CSV format, to the `data` directory of this project's root directory.
+
+The secondary aim of this project, is to demonstrate how the deployment of the model generated as a 'build artefact' of the modelling notebook, can be automatically deployed as a managed RESTful prediction service on Kubernetes, without having to write **any** custom code. The full details are contained in the `deploy/deploy-model.ipynb` notebook, where we lean very heavily on the approaches discussed [here](https://github.com/AlexIoannides/kubernetes-ml-ops).
 
 ## Managing Project Dependencies using Pipenv
 
