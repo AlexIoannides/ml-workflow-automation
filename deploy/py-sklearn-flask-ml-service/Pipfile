@@ -8,6 +8,7 @@ flask = "*"
 joblib = "*"
 pandas = "*"
 sklearn = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.7"
